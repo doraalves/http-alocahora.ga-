@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Login</title>
+    <link rel="icon" href="Imagens/c_icon.png">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                    <form class="border border-primary border-2 border-opacity-50 shadow-lg p-3 mb-5 bg-body rounded py-4 px-3 p-xl-5">
+                        <img src="Imagens/logo_uva.png" class="img-fluid" alt="...">
+                        <div class="row">
+                            <div class="col">
+                                <label for="user" class="form-label">Usuário</label>
+                                <input type="user" name="user" id="user" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row my-5 justify-content-center">
+                            <div class="col-12 mb-2">
+                                <button type="submit" onclick="logar(); return false" class="btn btn-primary w-100">
+                                    Entrar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/script.jss"></script>
+
+
+
+</body>
+<footer>
+    <strong>
+        <div class="card text-center">
+            <div class="card-footer text-muted">
+                Copyright © 2022. Full Stack Developer (Izadora Alves) & Orientador do Projeto (Dr. Alfredo Boente).
+                Todos os direitos reservados.
+            </div>
+        </div>
+    </strong>
+</footer>
+
+</html>
