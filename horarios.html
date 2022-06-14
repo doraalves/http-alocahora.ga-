@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>SAH - Cadastro Horarios</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylehr.css">
+    <link rel="icon" href="c_icon.png">
+</head>
+
+<body>
+    <!--Topo-->
+    <nav class="navbar" style="background-color: #C3E6FF;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                role="button" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                Sistema de Alocação de Horários
+            </a>
+        </div>
+    </nav>
+    <!--Menu-->
+    <div class="offcanvas offcanvas-start d-flex flex-column flex-shrink-0 p-3 bg-light" tabindex=" -1"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 280px;">
+
+        <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="logo_uva.png" alt="" width="150" height="70">
+            <span class="fs-4"></span>
+        </a>
+        <hr>
+        <!--Menu-->
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <!--Home-->
+                <a href="home.html"  class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <!--Hr cadastrada-->
+                <a href="#" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2" />
+                    </svg>
+                    Horários Cadastrados
+                </a>
+            </li>
+            <li>
+                <!--Novo Prof-->
+                <a href="cadastroprof.html" class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table" />
+                    </svg>
+                    Novo Professor
+                </a>
+            </li>
+            <li>
+                <!--Nova Disciplina-->
+                <a href="disci.html" class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#grid" />
+                    </svg>
+                    Nova Disciplina
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="c_icon.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>ADMIN</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                <li><a class="dropdown-item" href="login.html">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="idance">
+            <div class="schedule content-block">
+                <div class="container">
+                    <br>
+                    <h2 data-aos="zoom-in-up" class="aos-init aos-animate">Manhã</h2>
+
+                    <div class="timetable">
+
+                        <!-- Schedule Top Navigation -->
+                        <nav class="nav nav-tabs">
+                            <a class="nav-link active">Seg</a>
+                            <a class="nav-link">Ter</a>
+                            <a class="nav-link">Qua</a>
+                            <a class="nav-link">Qui</a>
+                            <a class="nav-link">Sex</a>
+                            <a class="nav-link">Sab</a>
+                        </nav>
+
+                        <div class="tab-content">
+                            <div class="tab-pane show active">
+                                <div class="row">
+
+                                    <!-- Item 1 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">08:20 ás 09:10</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">09:10 ás 10:00</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 3 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">10:10 ás 11:00</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 4 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">11:00 ás 11:50</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Noite-->
+                    <br>
+                    <h2 data-aos="zoom-in-up" class="aos-init aos-animate">Noite</h2>
+
+                    <div class="timetable">
+
+                        <!-- Schedule Top Navigation -->
+                        <nav class="nav nav-tabs">
+                            <a class="nav-link active">Seg</a>
+                            <a class="nav-link">Ter</a>
+                            <a class="nav-link">Qua</a>
+                            <a class="nav-link">Qui</a>
+                            <a class="nav-link">Sex</a>
+                            <a class="nav-link">Sab</a>
+                        </nav>
+
+                        <div class="tab-content">
+                            <div class="tab-pane show active">
+                                <div class="row">
+
+                                    <!-- Item 1 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">19:20 ás 20:10</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">20:10 ás 21:00</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 3 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">21:10 ás 22:00</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 4 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">22:00 ás 22:50</div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Disciplina 1</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="timetable-item-name">Professor 1</div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-book">Editar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<!--Rodapé-->
+<footer>
+    <strong>
+        <div class="card text-center">
+            <div class="card-footer text-muted">
+                © 2022 | Izadora Alves (Full Stack Developer) & Dr. Alfredo Boente (Orientador do Projeto).
+            </div>
+        </div>
+    </strong>
+</footer>
+
+</html>
